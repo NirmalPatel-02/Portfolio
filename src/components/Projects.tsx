@@ -27,28 +27,28 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-20 px-4 bg-white">
       <div className="container">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">
-            Featured Projects
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
+            Featured <span className="text-primary">Projects</span>
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <div 
                 key={index} 
-                className="glass-card p-6 flex flex-col hover-glow"
+                className="card-elegant p-6 flex flex-col"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <h3 className="font-heading text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-muted-foreground mb-4 flex-grow">{project.description}</p>
+                <h3 className="font-heading text-xl font-semibold mb-3 text-foreground">{project.title}</h3>
+                <p className="text-muted-foreground mb-4 flex-grow leading-relaxed">{project.description}</p>
                 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tools.map((tool, i) => (
                     <span 
                       key={i} 
-                      className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full"
+                      className="text-xs px-3 py-1 bg-primary/5 text-primary rounded-full border border-primary/20 font-medium"
                     >
                       {tool}
                     </span>
@@ -58,7 +58,7 @@ const Projects = () => {
                 <div className="flex gap-3">
                   <Button 
                     size="sm" 
-                    className="flex-1 bg-primary text-primary-foreground hover:bg-primary/90"
+                    className="flex-1 btn-primary text-sm"
                     asChild
                   >
                     <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
@@ -69,7 +69,7 @@ const Projects = () => {
                   <Button 
                     size="sm" 
                     variant="outline"
-                    className="border-primary text-primary hover:bg-primary/10"
+                    className="border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all text-sm"
                     asChild
                   >
                     <a href={project.codeLink} target="_blank" rel="noopener noreferrer">

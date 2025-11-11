@@ -23,16 +23,16 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 bg-secondary/20">
+    <section id="skills" className="py-20 px-4 bg-gradient-to-b from-background to-white">
       <div className="container">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">
-            Technical Skills
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
+            Technical <span className="text-primary">Skills</span>
           </h2>
 
           <div className="space-y-8">
             {skillGroups.map((group, index) => (
-              <div key={index} className="glass-card p-6">
+              <div key={index} className="card-elegant p-6 md:p-8">
                 <h3 className="font-heading text-xl font-semibold mb-4 text-primary">
                   {group.category}
                 </h3>
@@ -40,7 +40,7 @@ const Skills = () => {
                   {group.skills.map((skill, i) => (
                     <span 
                       key={i} 
-                      className="px-4 py-2 bg-secondary text-foreground rounded-lg hover:bg-primary/20 hover:text-primary transition-all cursor-default"
+                      className="px-4 py-2 bg-primary/5 text-foreground rounded-lg border border-primary/20 hover:bg-primary hover:text-white transition-all cursor-default font-medium"
                     >
                       {skill}
                     </span>

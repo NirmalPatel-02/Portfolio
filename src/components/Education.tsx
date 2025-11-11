@@ -19,28 +19,28 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-20 px-4 bg-secondary/20">
+    <section id="education" className="py-20 px-4 bg-gradient-to-b from-white to-background">
       <div className="container">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-center mb-12 gradient-text">
-            Education
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-center mb-12 text-foreground">
+            <span className="text-primary">Education</span>
           </h2>
 
           <div className="space-y-6">
             {education.map((edu, index) => (
               <div 
                 key={index} 
-                className="glass-card p-6 md:p-8 hover-glow"
+                className="card-elegant p-6 md:p-8"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/10 rounded-lg">
+                  <div className="p-3 bg-primary/10 rounded-xl">
                     <GraduationCap className="h-6 w-6 text-primary" />
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
-                      <h3 className="font-heading text-xl md:text-2xl font-semibold">{edu.degree}</h3>
-                      <span className="text-sm px-3 py-1 bg-primary/20 text-primary rounded-full">
+                      <h3 className="font-heading text-xl md:text-2xl font-semibold text-foreground">{edu.degree}</h3>
+                      <span className="text-sm px-3 py-1 bg-primary/10 text-primary rounded-full font-medium">
                         {edu.status}
                       </span>
                     </div>
