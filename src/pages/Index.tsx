@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Education from "@/components/Education";
@@ -9,7 +10,8 @@ import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-20">
+      <Navbar />
       <Hero />
       <About />
       <Education />
@@ -20,7 +22,7 @@ const Index = () => {
       <Contact />
       
       {/* Footer */}
-      <footer className="py-8 px-4 border-t border-border/50">
+      <footer className="py-8 px-4 border-t border-border/50 bg-white/60 backdrop-blur-sm">
         <div className="container text-center">
           <p className="text-muted-foreground">
             © 2025 Patel Nirmal N. All rights reserved.

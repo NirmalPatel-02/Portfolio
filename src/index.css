@@ -9,49 +9,63 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Modern Classic Professional Theme */
-    --background: 220 35% 98%;          /* #f8f9fc - soft off-white */
-    --foreground: 215 25% 9%;           /* #0f172a - deep slate black */
+    --background: 220 35% 98%;
+    /* #f8f9fc - soft off-white */
+    --foreground: 215 25% 9%;
+    /* #0f172a - deep slate black */
 
-    --card: 0 0% 100%;                  /* #ffffff - pure white */
-    --card-foreground: 215 25% 9%;      /* #0f172a */
+    --card: 0 0% 100%;
+    /* #ffffff - pure white */
+    --card-foreground: 215 25% 9%;
+    /* #0f172a */
 
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 9%;
 
-    --primary: 217 91% 60%;             /* #2563eb - royal blue */
-    --primary-foreground: 0 0% 100%;    /* white text on blue */
+    --primary: 217 91% 60%;
+    /* #2563eb - royal blue */
+    --primary-foreground: 0 0% 100%;
+    /* white text on blue */
 
-    --secondary: 220 17% 91%;           /* #e2e8f0 - light gray */
+    --secondary: 220 17% 91%;
+    /* #e2e8f0 - light gray */
     --secondary-foreground: 215 25% 9%;
 
-    --muted: 220 17% 91%;               /* #e2e8f0 */
-    --muted-foreground: 215 16% 37%;    /* #475569 - muted gray */
+    --muted: 220 17% 91%;
+    /* #e2e8f0 */
+    --muted-foreground: 215 16% 37%;
+    /* #475569 - muted gray */
 
-    --accent: 217 91% 60%;              /* #2563eb - royal blue */
+    --accent: 217 91% 60%;
+    /* #2563eb - royal blue */
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 17% 91%;              /* #e2e8f0 */
+    --border: 220 17% 91%;
+    /* #e2e8f0 */
     --input: 220 17% 91%;
-    --ring: 217 91% 60%;                /* royal blue */
+    --ring: 217 91% 60%;
+    /* royal blue */
 
-    --radius: 0.875rem;                 /* 14px */
+    --radius: 0.875rem;
+    /* 14px */
 
     /* Custom design tokens */
-    --accent-secondary: 217 91% 65%;    /* #3b82f6 - lighter blue */
-    
+    --accent-secondary: 217 91% 65%;
+    /* #3b82f6 - lighter blue */
+
     /* Professional Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(217, 91%, 65%));
     --gradient-hero: linear-gradient(135deg, hsl(220, 35%, 98%), hsl(217, 91%, 97%));
     --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(248, 249, 252, 0.8));
-    
+
     /* Soft Professional Shadows */
     --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
     --shadow-button: 0 2px 12px rgba(37, 99, 235, 0.15);
     --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.08);
-    
+
     /* Smooth Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-lift: transform 0.2s ease, box-shadow 0.2s ease;
@@ -68,7 +82,12 @@ All colors MUST be HSL.
     font-family: 'Inter', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Poppins', sans-serif;
   }
 }
@@ -135,6 +154,7 @@ All colors MUST be HSL.
       opacity: 0;
       transform: translateY(30px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -149,6 +169,7 @@ All colors MUST be HSL.
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }

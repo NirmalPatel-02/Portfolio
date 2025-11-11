@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Download, ArrowDown } from "lucide-react";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/LinkedInProfile.png";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -17,10 +17,10 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-6 animate-fade-in-up">
-            <h1 className="font-heading text-5xl md:text-7xl font-bold text-foreground">
+            <h1 className="font-heading text-5xl md:text-7xl font-semibold text-foreground">
               Patel <span className="text-primary">Nirmal N.</span>
             </h1>
-            <p className="text-2xl md:text-3xl gradient-text font-semibold">
+            <p className="text-2xl md:text-3xl">
               Aspiring AI/ML Engineer | Turning Data into Intelligent Solutions
             </p>
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
@@ -36,14 +36,15 @@ const Hero = () => {
               >
                 View My Work
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all"
-              >
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
-              </Button>
+              <a href="/Nirmal_Patel_AI_ML_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -61,9 +62,9 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ArrowDown className="h-6 w-6 text-primary" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

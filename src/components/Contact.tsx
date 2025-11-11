@@ -51,7 +51,7 @@ const Contact = () => {
             Get in <span className="text-primary">Touch</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          {/* <div className="grid md:grid-cols-2 gap-8"> */}
             {/* Contact Info */}
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -80,7 +80,7 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <form onSubmit={handleSubmit} className="card-elegant p-6 space-y-4 bg-white">
+            {/* <form onSubmit={handleSubmit} className="card-elegant p-6 space-y-4 bg-white">
               <div>
                 <Input
                   placeholder="Your Name"
@@ -116,9 +116,9 @@ const Contact = () => {
               >
                 Send Message
               </Button>
-            </form>
+            </form> */}
           </div>
-        </div>
+        {/* </div> */}
       </div>
     </section>
   );
